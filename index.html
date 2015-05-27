@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="main.css" />
+    <script type="text/javascript" src="main.js"></script>
+</head>
+<body id="body">
+<div id="wrapper">
+	<header id="wrap_header">
+		<div id="header">
+			<img src="images\images.jpg"/>
+		</div>
+	</header>
+	
+	<nav id="navigation">
+		<ul>
+			<li class="homeButton" onclick="display_tab(1);">HOME</li><li onclick="display_tab(2);">PERSONAL INFO</li><li onclick="display_tab(3);">THINGS TO SHARE</li><li onclick="display_tab(4);">CALCULATOR</li><li class="fb">facebook</li>
+		</ul>
+	</nav>
+	
+	<section id="wrap_section">
+		<article class="tabs" id="tab1">
+			<header>
+				<h1>About this page</h1>
+			</header>
+			<p>Hi guys!!My name is Naveen Kumar.This is my webpage.It consists of some personal information about me,my hobbies,interests and ambitions.I have also included some things to share with you.</p>
+			<p>Please click corresponding tab to find more information about the stuff in this webpage.If you like to contact me, you can ping me on facebook by clicking the fb icon on the right side of the navigation bar above.</p>
+		</article> 
+		<article class="tabs" id="tab2">
+			<header>
+				<h1>Personal Information</h1>
+			</header>
+				<p>I live in Visakhapatnam,Andhra Pradesh.I am doing my B.Tech. in Computer science and Engineering Branch at National Institute of Technology, Tiruchirapalli (Tamil Nadu).At present, I have completed my first year and enjoying my vacation.</p>
+				<h3>Hobbies</h3>
+				<ul>
+					<li>reading novels</li>
+					<li>watching movies</li>
+					<li>listening music</li>
+				</ul>
+				<h3>Interests</h3>
+			    <ul>
+					<li>I like travelling a lot.I particularly love visiting places of natural interests and historical importance.</li>
+					<li>I have a special passion for coding and web development.</li>
+				</ul>
+				<h3>Aim</h3>
+				<p>My aim in life is to become to do social service and help as many people as possible.</p>
+		</article> 
+		<article class="tabs" id="tab3">
+			<header>
+				<h1>Things to share</h1>
+			</header>
+			<p>Hey!!I have some cool things to share with you.sorry for noe i habve no matter.I just typing some ioihfe.udhoeqhdiowejfr doeqidjheoiqw fehqoidhiqwoe. </p>
+		</article> 
+		<article class="tabs" id="tab4">
+			<div id="calc">
+				<div id="wrap_screen"><input type="text" id="screen"></input></div>
+				<div id="bar">
+					<div id="empty"></div>    <div id="clear" onclick='display("");'>C</div>
+				</div>
+				<div id="ordcalc">
+					<span class="key" onclick='append("7");'>7</span><span class="key" onclick='append("8");'>8</span><span class="key" onclick='append("9");'>9</span><span class="key operator" onclick='append("/");'>/</span>
+					<span class="key" onclick='append("4");'>4</span><span class="key" onclick='append("5");'>5</span><span class="key" onclick='append("6");'>6</span><span class="key operator" onclick='append("*");'>*</span>
+					<span class="key" onclick='append("1");'>1</span><span class="key" onclick='append("2");'>2</span><span class="key" onclick='append("3");'>3</span><span class="key operator" onclick='append("-");'>-</span>
+					<span class="key" onclick='append(".");'>.</span><span class="key" onclick='append("0");'>0</span><span class="key compute" onclick='compute();'>=</span><span class="key operator" onclick='append("+");'>+</span>
+				</div>
+				<div id="scicalc">
+					<span class="key" onclick='append("sin(");'>sin</span><span class="key" onclick='append("cos(");'>cos</span><span class="key" onclick='append("tan(");'>tan</span>
+					<span class="key" onclick='append("ln(");'>ln</span><span class="key" onclick='append("log(");'>log</span><span class="key" onclick='append("!");'>!</span>
+					<span class="key" onclick='append(Math.PI);'>&pi;</span><span class="key" onclick='append(Math.E);'>e</span><span class="key" onclick='append("^");'>^</span>
+					<span class="key" onclick='append("(");'>(</span><span class="key" onclick='append(")");'>)</span><span class="key" onclick='append("sqrt(");'>&radic;</span>
+				</div>
+			</div>
+		</article>
+	</section>
+	
+	<div id="aside_wrap">
+		<aside id="top_aside">
+			<h4>LATEST UPDATES</h4>
+			<marquee behavior="scroll"  height="100px" bgcolor="" direction="up" scrollamount="10" scrolldelay="250" >
+			<ul>
+				<li>Apple releases its third iphone genphone five.</li>
+				<li>Microsoft widows 8 is now free of cost!!</li>
+				<li>Life is beautiful.Make best use of it.</li>
+			</ul>
+			</marquee>
+		</aside>
+		<aside id="bottom_aside">
+			<h4>SOME QOUTES ABOUT WEB DEV</h4>
+			<p>"ghucgsd kjcsjcb vsjvcjwdc vwjev cjwseh jiou oihoef ohfwoefh oibfweofrh ofeqhfdouh odhqohdo ohdoqahw"</p>
+			<footer>by uwysvdxuywvw</footer>
+			<br />
+			<p>"ghucgsd kjcsjcb vsjvcjwdc vwjev cjwseh jiou oihoef ohfwoefh oibfweofrh ofeqhfdouh odhqohdo ohdoqahw"</p>
+			<footer>by uwysvdxuywvw</footer>
+		</aside>
+	</div>
+
+	<footer id="wrap_footer">
+		<div id="footer">
+			<h4>juguggigygyy</h4>
+			<p>Thank you for visiting my webpage.If you find the information on this page boring, please forgive me for that.</p>
+		</div>
+	</footer>
+</div>	
+</body>
+</html>
