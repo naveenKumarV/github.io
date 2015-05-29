@@ -22,7 +22,7 @@ function fact(n)										//finds the factorial of a number
 	var f=1;
 	for(var i=1;i<=n;++i)
 	{
-		f*=i;
+		f*=i; 
 	}
 	return f;
 }
