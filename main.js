@@ -1,7 +1,7 @@
 function display(val)									//displays the final answer
 {
 	document.getElementById("screen").value=val;
-}
+} 
 function append(val)
 {
 	document.getElementById("screen").value+=val;
