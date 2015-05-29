@@ -1,7 +1,7 @@
 #naveenKumarV.github.io
 
 
-This is my webpage developed as a part of Spider Inductions web development Task 1.
+This is my webpage developed as a part of Spider Inductions web development Task 1. 
 This webpage actually consists of a html file(index.html),an external stylesheet (main.css),an external javascript file(main.js) and an images folder which contains all images used in this webpage.
 The images folder also contains screenshots of the calculator app in my mobile as well as that of the calculator in my webpage.
 
