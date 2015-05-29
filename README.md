@@ -22,7 +22,7 @@ Now click the index.html file.
 I tried to make the web page responsive by using percentages instead of pixels and adding media queries.
 I kept the content of webpage in separate clickable tabs and used javascript function to accomplish this.
  
- 
+  
  The screen shots of the calculator in my mobile are below.
  
 ![alt tag](https://github.com/naveenKumarV/naveenKumarV.github.io/blob/master/images/Screenshot_2015-05-29-17-28-50.png)
