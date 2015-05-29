@@ -2,12 +2,16 @@
 	margin:0;
 	padding:0;
 }
-
 body{
 	width:100%;
-	background-color:#d1d0d2;
+	background-image: url(images/bg1.jpg); 
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 	color:#031019;
-    //font-family: "Lucida Sans", Verdana, sans-serif;
 }
 #wrapper{
 	width:80%;
@@ -15,18 +19,24 @@ body{
 }
 #wrap_header{
 	width:100%;
-	overflow:hidden;
 }	 
 #header{
 	width:100%;
-	height:150px;
+	height:145px;
 	border:1px solid black;
 	margin:2% 0;
+	background-color:#f1f0f2;
+	border-radius:5px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
 }
-#header img
-{
-	width:100%;
-	height:150px;
+#header_content{
+	margin:40px 10px 40px 0px;
+	float:right;}
+#header img{
+	width:140px;
+	height:140px;
+	float:left;
 }
 #navigation{
 	width:100%;
@@ -43,22 +53,27 @@ body{
 	text-align:center;
 	color:#f1f0f2;
 	-webkit-user-select:none;
+	-moz-user-select:none;
 	height:50px;
 	line-height:50px;
-	word-wrap:break-word;
 	vertical-align:middle;
 	cursor:pointer;
 	border-radius:5px;
 	-webkit-border-radius:5px;
 	-moz-border-radius:5px;
 }
-
-.homeButton{
+#calc_icon,#fb{
+	-webkit-transition:-webkit-transform 1s,width 1s,height 1s;
+	transition:transform 1s,width 1s,height 1s;
+	width:50px;
+	height:50px;
 }
-.fb{
-	background-image:url(images/facebook.png); 
-	background-repeat:no-repeat;
-	background-position:;
+#calc_icon:hover,#fb:hover{
+	-webkit-transform:rotate(360deg);
+	transform:rotate(360deg);
+	width:70px;
+	height:70px;
+	margin:-10px;
 }
 #navigation ul li:hover{
 	background-color:#cf3c3f;
@@ -81,6 +96,24 @@ body{
 	width:80%;
 	margin:5% 10% 5% 10%;
 }
+.tabs h1{
+	margin-bottom:20px;
+	color:#e91058;
+}
+.tabs h3{
+	margin:15px 0 5px 0;
+	color:#38ae0e;
+}
+.tabs p{
+	margin-bottom:15px;
+}
+.tabs img{
+	width:300px;
+	height:220px;
+}
+#tab3 #nitt{
+	width:100%;
+	margin:10px auto;}
 #tab1{
 	display:block;
 }
@@ -92,6 +125,9 @@ body{
 	width:310px;
 	margin:20px auto;
 }
+#calc h1{
+	text-align:center;
+	margin-bottom:20px;}
 #ordcalc ,#scicalc{
 	display:block;
 	width:148px;
@@ -144,7 +180,7 @@ body{
 	line-height:35px;
     cursor: pointer;
     -webkit-user-select:none;
-	user-select:none;
+	-moz-user-select:none;
 }
 
 #scicalc .key{
@@ -178,6 +214,7 @@ body{
 }
 #top_aside{
 	font-size:0.9em;
+	color:#06a7fa;
 }
 #bottom_aside{
 	font-size:1em;
@@ -192,6 +229,8 @@ body{
 	font-size:1em;
 	margin-bottom:10px;
 	text-align:center;
+	color:#f80a0a;
+	text-shadow:rgba(247,250,6,0.8) 1px 1px 1px;
 }
 #wrap_footer{
 	width:100%;
@@ -228,94 +267,53 @@ body{
 	}
 	#navigation ul li{
 		width:100%;
-		height:30px;
-		line-height:30px;
+		height:60px;
+		line-height:60px;
 		word-wrap:break-word;
-		//border-bottom:1px solid black;
-	}
-	.homeButton{
-	}
-	//.fb{
-		background-image:url(images/facebook.png); 
-		background-repeat:no-repeat;
-		background-position:;
 	}
 	#wrap_section{
 		width:100%;
 	}
-	#calc{
-		width:148px;
-		margin:20px auto;
-	}
-	/*stopped editing from here*/
-//#ordcalc ,#scicalc{
-	display:block;
-	width:148px;
-	height:148px;
-	border:1px solid black;
-	padding:0px;
-	background-color:#333334;
-	float:left;
-	margin-bottom:20px;
-}
-//#ordcalc{
-	margin-right:10px;
-}
-//#wrap_screen{
-	width:100%;
-}
-//#screen{
-	display:block;
-	height:40px;
-	width:148px;
-	margin:2px auto;
-}
-//.key{
-	display:inline-block;
-	width:35px;
-	height:35px;
-	background-color:#919092;
-	color:white;
-	text-align:center;
-	margin:1px;
-	vertical-align:middle;
-	line-height:35px;
-    cursor: pointer;
-    -webkit-user-select:none;
-	user-select:none;
-}
-
-//#scicalc .key{
-	width:47px;
-}
-//#ordcalc  .key.compute,#ordcalc  .key.operator ,#scicalc .key{
-	background-color:#707072;
-}
-//#scicalc .key:hover,#ordcalc .key:hover,#ordcalc  .key.compute:hover,#ordcalc  .key.operator:hover{
-	background-color: #156FB0;
-}
 	#aside_wrap{
 		margin:4% 0% 4% 0%;
 		width:100%;
 		float:left;
 	}
-	//#aside_wrap ul li{
-		list-style:none;
-		padding:20px 0 0 20px;
-	}
-	//#bottom_aside ,#top_aside{
-	margin-bottom:2%;
-	width:92%;
-	border:1px solid black;
-	border-radius:5px;
-	-webkit-border-radius:5px;
-	-moz-border-radius:5px;
-	background-color:#f1f0f2;
-	padding:4%;
-	}
-	
-//#footer h4{
-	text-align:center;
 }
 
+@media only screen and (max-width:380px)
+{
+	#header{
+		width:100%;
+		height:250px;
+	}
+	#header_content{
+		width:180px; 
+		display:block;
+		clear:both;
+		margin:10px auto;
+	}
+	#header img{
+		width:140px;
+		clear:both;
+		margin:20px;}
+	#calc{
+		width:148px;
+		margin:20px auto;
+	}
+	#screen{
+		display:block;
+		height:40px;
+		width:148px;
+		margin:2px auto;
+	}
+	#bar{
+		width:148px;
+		height:20px;
+		margin:5px auto;
+	}
+	#scicalc{
+		display:none;
+	}
 }
+

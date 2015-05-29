@@ -10,15 +10,20 @@
 </head>
 <body id="body">
 <div id="wrapper">
+
 	<header id="wrap_header">
 		<div id="header">
-			<img src="images\images.jpg"/>
+			<img id="header_img" src="images\n.png"/>
+			<div id="header_content">
+				NAME   :V.Naveen Kumar<br/>
+				Roll No:106114101
+			</div>
 		</div>
 	</header>
 	
 	<nav id="navigation">
 		<ul>
-			<li class="homeButton" onclick="display_tab(1);">HOME</li><li onclick="display_tab(2);">PERSONAL INFO</li><li onclick="display_tab(3);">THINGS TO SHARE</li><li onclick="display_tab(4);">CALCULATOR</li><li class="fb">facebook</li>
+			<li class="homeButton" onclick="display_tab(1);">HOME</li><li onclick="display_tab(2);">INFO</li><li onclick="display_tab(3);">COLLEGE</li><li onclick="display_tab(4);"><img id="calc_icon" src="images/calc1.png" alt="CALCULATOR" /></li><li><a href="https://www.facebook.com/naveenkumar.vedurupaka" ><img id="fb"src="images/fb.png" alt="facebook" /></a></li>
 		</ul>
 	</nav>
 	
@@ -27,14 +32,15 @@
 			<header>
 				<h1>About this page</h1>
 			</header>
-			<p>Hi guys!!My name is Naveen Kumar.This is my webpage.It consists of some personal information about me,my hobbies,interests and ambitions.I have also included some things to share with you.</p>
-			<p>Please click corresponding tab to find more information about the stuff in this webpage.If you like to contact me, you can ping me on facebook by clicking the fb icon on the right side of the navigation bar above.</p>
+			<p>Hi guys!! My name is Naveen Kumar. This is my webpage. It consists of some personal information about me, my hobbies, interests and ambitions. I have also included some things to share with you.
+			Please click the corresponding tab to find more information about the stuff in this webpage.</p>
+			<p>I have designed a calculator on this web page. To view it, please click the calculator icon on the right side of the navigation bar above. If you want to contact me, you can ping me on facebook by clicking the fb icon beside the calculator icon.</p>
 		</article> 
 		<article class="tabs" id="tab2">
 			<header>
 				<h1>Personal Information</h1>
 			</header>
-				<p>I live in Visakhapatnam,Andhra Pradesh.I am doing my B.Tech. in Computer science and Engineering Branch at National Institute of Technology, Tiruchirapalli (Tamil Nadu).At present, I have completed my first year and enjoying my vacation.</p>
+				<p>I live in Visakhapatnam, Andhra Pradesh. I am doing my B.Tech. in Computer science and Engineering Branch at National Institute of Technology, Tiruchirapalli (Tamil Nadu). At present, I have completed my first year and enjoying my vacation.</p>
 				<h3>Hobbies</h3>
 				<ul>
 					<li>reading novels</li>
@@ -43,20 +49,23 @@
 				</ul>
 				<h3>Interests</h3>
 			    <ul>
-					<li>I like travelling a lot.I particularly love visiting places of natural interests and historical importance.</li>
-					<li>I have a special passion for coding and web development.</li>
+					<li>I like travelling a lot. I particularly love visiting places of natural interests and historical importance.</li>
+					<li>I have a special passion for programming and web development.</li>
 				</ul>
 				<h3>Aim</h3>
-				<p>My aim in life is to become to do social service and help as many people as possible.</p>
+				<p>My aim in life is to become to do social service and help people as much as I can.</p>
 		</article> 
 		<article class="tabs" id="tab3">
 			<header>
-				<h1>Things to share</h1>
+				<h1>My College</h1>
 			</header>
-			<p>Hey!!I have some cool things to share with you.sorry for noe i habve no matter.I just typing some ioihfe.udhoeqhdiowejfr doeqidjheoiqw fehqoidhiqwoe. </p>
+			<img id="nitt" src="images/nitt.jpg" />
+			<p>The National Institute of Technology, Tiruchirappalli (NITT), formerly Regional Engineering College, is a public engineering and technology university located 20 km near the city of Tiruchirappalli in Tamil Nadu, India.
+			The institute was founded in 1964 to cater to the country's growing need for technological manpower.The institute is located on an 800-acre (3.2 km2) campus.NITT is ranked as one of the top most NITs.</p>
 		</article> 
 		<article class="tabs" id="tab4">
 			<div id="calc">
+				<h1>CALCULATOR</h1>
 				<div id="wrap_screen"><input type="text" id="screen"></input></div>
 				<div id="bar">
 				    <div id="clear" onclick='display("");'>C</div>
@@ -70,11 +79,18 @@
 				</div>
 				<div id="scicalc">
 					<span class="key" onclick='append("sin(");'>sin</span><span class="key" onclick='append("cos(");'>cos</span><span class="key" onclick='append("tan(");'>tan</span>
-					<span class="key" onclick='append("ln(");'>ln</span><span class="key" onclick='append("log(");'>log</span><span class="key" onclick='append("!");'>!</span>
-					<span class="key" onclick='append(Math.PI);'>&pi;</span><span class="key" onclick='append(Math.E);'>e</span><span class="key" onclick='append("^");'>^</span>
+					<span class="key" onclick='append("ln(");'>ln</span><span class="key" onclick='append("log(");'>log</span><span class="key" onclick='append("!(");'>!</span>
+					<span class="key" onclick='append(Math.PI);'>&pi;</span><span class="key" onclick='append(Math.E);'>e</span><span class="key" onclick='append("%");'>%</span>
 					<span class="key" onclick='append("(");'>(</span><span class="key" onclick='append(")");'>)</span><span class="key" onclick='append("sqrt(");'>&radic;</span>
 				</div>
 				</div>
+				<h3>Instructions to use the Calculator</h3>
+				<ol>
+					<li>Unlike normal Android calculator, please use the multiplication symbol wherever it's necessary.
+						It's not understood automatically by the calculator.<br/>Example: 9(sin(10)cos(8)) must be entered as 9*(sin(10)*cos(8)) <br/><br/></li>
+					<li>Don't forget to close the parenthesis.<br /><br ></li>
+					<li>Here &pi; value is taken upto only 15 decimal places (3.141592653589793). This results in small error in the final answer.</li> 
+				</ol>
 			</div>
 		</article>
 	</section>
@@ -84,19 +100,18 @@
 			<h5>LATEST UPDATES</h5>
 			<marquee behavior="scroll"  height="100px" bgcolor="" direction="up" scrollamount="10" scrolldelay="250" >
 			<ul>
-				<li>Apple releases its third iphone genphone five.</li>
-				<li>Microsoft widows 8 is now free of cost!!</li>
-				<li>Life is beautiful.Make best use of it.</li>
+				<li><a href="http://www.sciencedaily.com/releases/2015/05/150528084202.htm">Stanford University is trying to launch super efficient light-based computers.</a></li><br/>
+				<li><a href="http://timesofindia.indiatimes.com/tech/apps/Google-Photos-gets-a-revamp-comes-with-unlimited-storage/articleshow/47463224.cms" >Google Photos gets a revamp, comes with unlimited storage</a></li>
 			</ul>
 			</marquee>
 		</aside>
 		<aside id="bottom_aside">
-			<h5>SOME QOUTES ABOUT WEB DEV</h5>
-			<p><em>"ghucgsd kjcsjcb vsjvcjwdc vwjev cjwseh jiou oihoef ohfwoefh oibfweofrh ofeqhfdouh odhqohdo ohdoqahw"</em></p>
-			<footer>by uwysvdxuywvw</footer>
+			<h5>SOME INTERESTING QOUTES</h5>
+			<p><em>"Programming today is a race between software engineers striving to build bigger and better idiot-proof programs and the universe trying to build bigger and better idiots. So far, the universe is winning."</em></p>
+			<footer>- Rick Cook</footer>
 			<br /><br/>
-			<p><em>"ghucgsd kjcsjcb vsjvcjwdc vwjev cjwseh jiou oihoef ohfwoefh oibfweofrh ofeqhfdouh odhqohdo ohdoqahw"</em></p>
-			<footer>by uwysvdxuywvw</footer>
+			<p><em>"If builders built buildings the way programmers wrote programs,the first woodpecker that came along wound destroy civilization."</em></p>
+			<footer>- Gerald Weinberg</footer>
 		</aside>
 	</div>
 
@@ -106,6 +121,7 @@
 			<p>Thank you for visiting my webpage.If you find the information on this page boring, please forgive me for that.</p>
 		</div>
 	</footer>
+	
 </div>	
 </body>
 </html>
